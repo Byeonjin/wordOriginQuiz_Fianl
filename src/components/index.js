@@ -31,7 +31,7 @@ const getFullGlossQuiz = ({ element, gloss, example }) => {
 
 const getFullElementQuiz = ({ element, gloss, example }) => {
   const titleHtml = /* html */ `<h2>Gloss: ${gloss}</h2>
-  <h3>Example</h3> <span class = "example-words"><div class = 'hiding-hint'>마우스를 올리면 힌트가 보입니다.</div>${example}</span>
+  <h3>Example</h3> <div class = "example-words"><div class = 'hiding-hint'>마우스를 올리면 힌트가 보입니다.</div>${example}</div>
     `;
 
   const elements = shuffleArray(elementsArray)
