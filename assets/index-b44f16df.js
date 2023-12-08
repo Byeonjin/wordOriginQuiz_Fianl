@@ -2,7 +2,7 @@
   <h3>Example</h3> <span class = "example-words"><div class = 'hiding-hint'>마우스를 올리면 힌트가 보입니다.</div>${r}</span>
     `,o=u(y).filter(c=>c!==n).slice(0,4),s=`<li id-correct="true">${n}</li>`,l=o.reduce((c,h)=>[`<li id-correct="false">${h}</li>
 `,...c],[]);return`${a} <ol>${u([...l,s]).join("")}</ol>`},w=({element:e,gloss:n,example:r})=>{const a=`<h2>Gloss: ${n}</h2>
-  <h3>Example</h3> <span class = "example-words"><div class = 'hiding-hint'>마우스를 올리면 힌트가 보입니다.</div>${r}</span>
+  <h3>Example</h3> <div class = "example-words"><div class = 'hiding-hint'>마우스를 올리면 힌트가 보입니다.</div>${r}</div>
     `,o=u(x).filter(c=>c!==e).slice(0,4),s=`<li id-correct="true">${e}</li>`,l=o.reduce((c,h)=>[`<li id-correct="false">${h}</li>
 `,...c],[]);return`${a} <ol>${u([...l,s]).join("")}</ol>`},d=(e,n,r="gloss")=>{if(r==="gloss"){const a=`
     <div class = "root-container">
