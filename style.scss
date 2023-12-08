@@ -1,0 +1,129 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard-dynamic-subset.css");
+
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+    "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", "Segoe UI",
+    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
+
+  display: flex;
+  justify-content: center;
+}
+
+.home-container {
+  h1 {
+    text-align: center;
+  }
+
+  label {
+    display: block;
+    width: 17.75rem;
+    padding: 0.5rem;
+    height: fit-content;
+    border: 1px solid gray;
+    input {
+      height: 2rem;
+      width: 10rem;
+
+      font-size: 1rem;
+      border: none;
+    }
+  }
+
+  .quiz-button-container {
+    width: 18.75rem;
+
+    button {
+      height: 3rem;
+      padding: 0.5rem;
+      font-size: 1rem;
+      font-weight: 700;
+      background-color: rgb(248, 248, 248);
+      border: 1px solid gray;
+    }
+  }
+
+  .dictionary {
+    margin-top: 1rem;
+    height: 3rem;
+    width: 18.75rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: rgb(248, 248, 248);
+    border: 1px solid gray;
+  }
+}
+
+.root-container {
+  li {
+    height: 2rem;
+    font-size: 1.25rem;
+    padding: 0.25rem;
+  }
+
+  .cong {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+  }
+}
+
+.O {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inset: 0;
+  background-color: azure;
+  color: rgb(115, 127, 219);
+  font-size: 200px;
+
+  span {
+    position: absolute;
+  }
+}
+
+.X {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inset: 0;
+  background-color: rgb(215, 255, 156);
+  color: rgb(213, 41, 2);
+  font-size: 200px;
+}
+
+.hide {
+  display: none;
+}
+
+.example-words {
+  position: relative;
+
+  &:hover {
+    .hiding-hint {
+      display: none;
+    }
+  }
+
+  .hiding-hint {
+    position: absolute;
+    top: 0;
+    left: 0;
+    inset: 0;
+    color: aliceblue;
+    text-align: center;
+
+    background: rgb(14, 0, 255);
+    background: radial-gradient(
+      circle,
+      rgba(14, 0, 255, 1) 0%,
+      rgba(19, 183, 255, 1) 53%,
+      rgba(0, 198, 255, 1) 100%
+    );
+  }
+}
