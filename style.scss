@@ -103,6 +103,8 @@
 
 .example-words {
   position: relative;
+  word-wrap: break-word;
+  width: 300px;
 
   &:hover {
     .hiding-hint {
